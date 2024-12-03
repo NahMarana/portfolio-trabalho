@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio</title>
+  <link rel="stylesheet" href="CSS/portfolio.css">
+</head>
+
+<body>
+  <!-- Cabeçalho da página -->
+  <div id="header">
+    <div id="estudante">
+      <h3>Estudante de ADS</h3> <!-- Mostra o título a esquerda -->
+    </div>
+    <!-- Links de navegação para outras páginas do site -->
+    <div id="menu">
+      <a href="index.html">Home</a>
+      <a href="sobreMim.html">Sobre Mim</a>
+      <a href="formacoes.html">Formações</a>
+      <a href="porftolio.html">Portfólio</a>
+      <a href="contatos.html">Contatos</a>
+    </div>
+  </div>
+  <!-- Linha de separação -->
+  <div class="border"></div>
+
+  <!-- Corpo da página-->
+  <div id="spaces">
+    <div id="title"> <!-- Título da página-->
+      <h4>Alguns trabalhos já feitos</h4>
+    </div>
+    <!-- Criação de 3 caixas e cada caixa contendo uma imagem-->
+    <div id="caixas">
+      <div id="image1">
+        <label for="modalOpen1">
+          <img src="Imagens/Pesquisa de Satisfação dos Colaboradores.png" alt="Dashboard Power BI"
+            style="width: 430px; height: 300px; cursor: pointer;">
+        </label>
+      </div>
+      <div id="image2">
+        <label for="modalOpen2">
+          <img src="Imagens/Acompanhamento de Vendas.png" alt="Dashboard Power BI"
+            style="width: 430px; height: 300px; cursor: pointer;">
+        </label>
+      </div>
+      <div id="image3">
+        <label for="modalOpen3">
+          <img src="Imagens/Análise de Vendas de Empresas de Chocolate.png" alt="Dashboard Power BI"
+            style="width: 430px; height: 300px; cursor: pointer;">
+        </label>
+      </div>
+    </div>
+    <!-- Uma imagem e um link para navegação-->
+    <div id="icon"><img src="Imagens/power BI.png" alt="PowerBI"><a
+        href="https://bit.ly/portfolio-nathaliamarana" target="_blank">Portfólio Power BI</a></div>
+
+  </div>
+
+  <!-- Foram criados 3 Modais, contendo um iframe, para exibir de forma interativa o link do power BI direito na página-->
+  <input type="checkbox" id="modalOpen1" style="display:none;"> <!-- checkbox de controle do modal e deixar oculto-->
+  <div class="modal">
+    <div class="modalBox">
+      <iframe
+        src="https://app.powerbi.com/view?r=eyJrIjoiNDY5MzUwYjAtMjQ2YS00NmVhLThmMjEtZmJlMDc4YjY2OTA2IiwidCI6IjhlNjc1MThjLWMwZDMtNDA5Ny05M2QwLTEzMGRiNDhkOWFlMSJ9"
+        width="100%" height="100%" frameborder="0" allowFullScreen="true"></iframe> <!-- Caixa onde vai aparecer-->
+      <label for="modalOpen1" class="btn">X</label> <!-- botão para fechar-->
+    </div>
+  </div>
+
+  <input type="checkbox" id="modalOpen2" style="display:none;">
+  <div class="modal">
+    <div class="modalBox">
+      <iframe
+        src="https://app.powerbi.com/view?r=eyJrIjoiOGYxNDZjNTMtZjNlOC00NzVhLTkyNGItODc3MGI3Y2ZhYzFhIiwidCI6IjhlNjc1MThjLWMwZDMtNDA5Ny05M2QwLTEzMGRiNDhkOWFlMSJ9"
+        width="100%" height="100%" frameborder="0" allowFullScreen="true"></iframe>
+      <label for="modalOpen2" class="btn">X</label>
+    </div>
+  </div>
+
+  <input type="checkbox" id="modalOpen3" style="display:none;">
+  <div class="modal">
+    <div class="modalBox">
+      <iframe src="https://app.powerbi.com/view?r=eyJrIjoiMWZiMTFkYzMtODMwOS00ZjhiLTgxYmItOWQxNDI2YTVhOGJhIiwidCI6IjhlNjc1MThjLWMwZDMtNDA5Ny05M2QwLTEzMGRiNDhkOWFlMSJ9" width="100%" height="100%" frameborder="0" allowFullScreen="true"></iframe>
+      <label for="modalOpen3" class="btn">X</label>
+    </div>
+  </div>  
+
+  <!-- Footer da página -->
+  <footer id="footer">
+    <div id="topbar"></div> <!-- Contém uma linha de separação -->
+  </footer>
+</body>
+
+</html>

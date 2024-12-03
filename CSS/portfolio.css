@@ -1,0 +1,202 @@
+/*
+****** LIMPAR FORMATAÇÕES ******
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+****** FORMATAÇÕES GENÉRICAS DO BODY ******
+*/
+body {
+  background-color: #141a1b;
+  height: 100vh;
+  width: 80%;
+  position: absolute;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+****** FORMATAÇÃO DO CABEÇALHO / HEADER ******
+*/
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
+.border {
+  border-bottom: 2px solid #afa9a7; /*Linha de separação da página, decorativa */
+}
+
+#estudante {
+  color: #cfc3c1;
+  text-align: left;
+  font-size: 25px;
+}
+
+#menu {
+  text-align: end;
+}
+
+#menu a:link,
+#menu a:visited {
+  color: #cfc3c1;
+  padding: 12px 12px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+#menu a:hover {
+  color: #927d7f;
+  font-size: 22px;
+}
+
+#menu a:active {
+  color: #927d7f;
+  font-weight: bold;
+}
+
+
+/*
+******  ESPAÇOS DO CENTRO DA PÁGINA ******
+*/
+#spaces {
+  height: 85vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/*
+******  ESTILIZAÇÃO DO TÍTULO ******
+*/
+#title {
+  position: absolute;
+  top: 15%; 
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #cfc3c1;
+}
+
+#modalOpen1:checked ~ #spaces #title {
+  display: none; /*Quando abre o modal o título no fundo desaparece */
+}
+
+/*
+******  ESPAÇOS E ESTILIZAÇÕES DAS CAIXAS E IMAGENS ******
+*/
+#caixas {
+  display: flex;
+  justify-content: center;
+  gap: 55px;
+}
+
+#image1, #image2, #image3 {
+  border: 2px solid #afa9a7;
+  padding-top: 1px;
+  height: 300px;
+  width: 430px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+******  ICONE E LINK ******
+*/
+#icon {
+  position: relative;
+  bottom: -22%;
+  text-align: center;
+}
+
+#icon > a {
+  font-size: 19px;
+  display: flex;
+  text-decoration: none;
+  color: #cfc3c1;
+  gap: 8px;
+}
+
+#modalOpen1:checked ~ #spaces #icon {
+  display: none; /*Quando abre o modal o icone e link de fundo desaparece */
+}
+
+/*
+****** MODAL ******
+*/
+.modal {
+  display: none; /*Ele começa escondido*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Quando o checkbox for marcado mostra o modal */
+#modalOpen1:checked + .modal {
+  display: flex;
+}
+
+#modalOpen2:checked + .modal {
+  display: flex;
+}
+
+#modalOpen3:checked + .modal {
+  display: flex;
+}
+
+/*
+******  CAIXA DO MODAL (estilização)  ******
+*/
+.modalBox {
+  padding: 50px;
+  position: relative;
+  max-width: 85%;
+  max-height: 85%;
+}
+
+/*
+******  BOTÃO  ******
+*/
+.btn {
+  position: absolute;
+  top: 0px;
+  right: 70px;
+  font-size: 25px;
+  cursor: pointer;
+  display: block;
+  color: white;
+}
+
+/*
+******  IFRAME (estilização)  ******
+*/
+iframe {
+  width: 78vw;
+  height: 100vh;
+}
+
+/*
+******  FOOTER ******
+*/
+
+/*Linha de separação fim da página, decorativa */
+#topbar {
+  border-bottom: 2px solid #afa9a7;
+  margin-bottom: 5px;
+}
